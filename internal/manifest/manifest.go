@@ -33,7 +33,7 @@ func Parse(r io.Reader) ([]Dependency, error) {
 			continue
 		}
 		fields := strings.Fields(line)
-		if len(fields) < 2 {
+		if len(fields) != 2 {
 			return nil, fmt.Errorf("manifest: line %d: expected 'name version', got %q", lineNo, line)
 		}
 		v, err := semver.ParseVersion(fields[1])
