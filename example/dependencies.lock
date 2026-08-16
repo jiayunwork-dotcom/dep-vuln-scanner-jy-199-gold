@@ -1,0 +1,6 @@
+# Example dependency lock file for dep-vuln-scanner
+# Format: <module/path> <version>
+github.com/docker/distribution v2.7.1+incompatible
+golang.org/x/text v0.3.0
+example.com/insecure-lib v1.0.0
+github.com/foo/bar v1.2.3
